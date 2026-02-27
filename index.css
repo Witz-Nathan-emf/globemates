@@ -1,0 +1,39 @@
+
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3A4FFF;
+  --color-secondary: #7B5CFF;
+  --color-premium-blue: #3A4FFF;
+  --color-premium-violet: #7B5CFF;
+  --color-soft-gray: #F8F9FA;
+  --color-light-bg: #FDFDFF;
+}
+
+@layer base {
+  body {
+    @apply bg-light-bg text-slate-900 transition-colors duration-500;
+  }
+}
+
+@layer components {
+  .premium-gradient {
+    @apply bg-gradient-to-br from-[#3A4FFF] to-[#7B5CFF];
+  }
+  
+  .premium-button {
+    @apply bg-gradient-to-br from-[#3A4FFF] to-[#7B5CFF] text-white shadow-lg shadow-blue-200/50 hover:shadow-blue-300/60 transition-all active:scale-[0.98] font-bold;
+  }
+  
+  .premium-card {
+    @apply bg-white/80 backdrop-blur-md border border-white/20 shadow-xl shadow-slate-200/40 rounded-[32px] transition-all duration-500;
+  }
+  
+  .glass-morphism {
+    @apply bg-white/40 backdrop-blur-lg border border-white/30 transition-all duration-500;
+  }
+  
+  .premium-glow {
+    box-shadow: 0 0 20px rgba(58, 79, 255, 0.15);
+  }
+}

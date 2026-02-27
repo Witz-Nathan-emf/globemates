@@ -1,0 +1,7 @@
+{
+  "name": "Globe Mates",
+  "description": "A social and secure meeting app for young travelers to find buddies, join local activities, and share cultural experiences safely.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
